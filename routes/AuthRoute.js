@@ -6,7 +6,7 @@ router.post('/login', controller.Login)
 router.post('/register', controller.Register)
 router.post('/update',
     middleware.stripToken,
-    middleware,middleware.verifyToken,
+    middleware.verifyToken,
     controller.UpdatePassword
     )
 router.get('/session',

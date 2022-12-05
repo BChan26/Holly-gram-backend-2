@@ -21,6 +21,25 @@ app.use('/feed', PostRoute)
 app.use('/user', UserRoute)
 
 
+const users={
+    "userdata": [
+{"name":"Santa",
+"img": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2022/01/12185631/tim-allen-santa-clause.jpeg"},
+{"name":"Grinch"},
+{"name":"Mrs. Claus"}
+    ]
+}
+
+
+app.get('/suggestions', (req, res) => {
+    console.log(req.body)
+     res.setHeader("Content-Type", "application/json");
+  res.json(users)
+})
+
+
+
+
 app.listen(PORT, () => { 
     console.log(`Express listening on port ${PORT}`)
 })

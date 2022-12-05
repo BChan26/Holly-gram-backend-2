@@ -11,8 +11,8 @@ module.exports = {
         profilePic: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/10/The-Santa-Clauses-Trailer-Tim-Allen-Disney-Plus.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
-        },
-        {}
+        }
+        
       ]
      return queryInterface.bulkInsert('users', users)
 
