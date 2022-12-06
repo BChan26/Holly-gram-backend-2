@@ -1,6 +1,15 @@
 const { Comments } = require('../models')
 
-
+const SeeComments = async (req,res) => {
+    try { 
+        const comments = await Comments.findAll({
+            where: { postId: req.body.postId}
+        })
+        res.send(comments)
+    } catch (error) {
+        throw error
+    }
+}
 
 const CreateComment = async (req, res) => {
     try {
@@ -33,6 +42,7 @@ const DeleteComment = async (req,res) => {
 }
 
 module.exports = {
+    SeeComments,
     CreateComment,
     UpdateComment,
     DeleteComment

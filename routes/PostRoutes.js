@@ -4,13 +4,13 @@ const middleware = require('../middleware')
 
 router.get('/', controller.SeeAllPosts)
 router.post(
-    '/', //<might be an issue
+    '/', 
     middleware.stripToken,
     middleware.verifyToken,
     controller.CreatePost
 )
 router.put(
-    '/:post_id', //<might need to change to _
+    '/:post_id', 
     middleware.stripToken,
     middleware.verifyToken,
     controller.UpdatePost

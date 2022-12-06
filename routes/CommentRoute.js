@@ -3,7 +3,7 @@ const controller = require('../controllers/Comments')
 const middleware = require('../middleware')
 
 
-
+router.get('/', controller.SeeComments)
 
 router.post(
     '/',
