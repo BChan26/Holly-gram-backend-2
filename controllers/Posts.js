@@ -42,7 +42,7 @@ const UpdatePost = async (req, res) => {
     try {
         const post = await Post.update(
             {...req.body},
-            { where: {id: req.params.postId}, returnining: true }
+            { where: {id: req.params.postId}, returning: true }
         )
     res.send(post)
     } catch (error) { 
