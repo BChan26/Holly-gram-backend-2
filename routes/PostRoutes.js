@@ -10,13 +10,13 @@ router.post(
     controller.CreatePost
 )
 router.put(
-    '/:post_id', 
+    '/:postId', 
     middleware.stripToken,
     middleware.verifyToken,
     controller.UpdatePost
 )
 router.delete(
-    '/:post_id',
+    '/:postId',
     middleware.stripToken,
     middleware.verifyToken,
     controller.DeletePosts
