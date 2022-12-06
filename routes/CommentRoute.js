@@ -3,7 +3,7 @@ const controller = require('../controllers/Comments')
 const middleware = require('../middleware')
 
 
-router.get('/', controller.SeeComments)
+router.get('/:postId', controller.SeeComments)
 
 router.post(
     '/',
@@ -13,7 +13,7 @@ router.post(
 )
 
 router.put(
-    ':commentId', //<might need to be comments_id
+    '/:commentId', //<might need to be comments_id
     middleware.stripToken,
     middleware.verifyToken,
     controller.UpdateComment
