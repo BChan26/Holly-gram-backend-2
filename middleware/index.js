@@ -24,7 +24,7 @@ const verifyToken = (req,res,next) => {
     try { 
         let payload = jwt.verify(token,APP_SECRET)
         if(payload) {
-            // res.locals.payload = payload
+            res.locals.payload = payload
             return next()
         }
         res.status(401).send(
