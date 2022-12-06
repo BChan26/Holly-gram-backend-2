@@ -23,10 +23,28 @@ app.use('/user', UserRoute)
 
 const users={
     "userdata": [
-{"name":"Santa",
+{
+    "id": 1,
+    "name":"Santa",
+    "username": "@st.nick",
 "img": "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2022/01/12185631/tim-allen-santa-clause.jpeg"},
-{"name":"Grinch"},
-{"name":"Mrs. Claus"}
+
+
+{
+    "id": 2,
+    "name":"Grinch",
+    "username": "@grinch>christmas"},
+
+
+{
+    "id": 3,
+    "name":"Mrs. Claus",
+    "username": "@mrs.st.nick"},
+
+{    "id": 4,
+    "name":"Holdiay Treats",
+    "username": "holidayrecipies"}
+
     ]
 }
 
