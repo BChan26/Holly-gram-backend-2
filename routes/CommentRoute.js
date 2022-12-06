@@ -13,14 +13,14 @@ router.post(
 )
 
 router.put(
-    ':comment_id', //<might need to be comments_id
+    ':commentId', //<might need to be comments_id
     middleware.stripToken,
     middleware.verifyToken,
     controller.UpdateComment
 )
 
 router.delete(
-    '/:comment_id',
+    '/:commentId',
     middleware.stripToken,
     middleware.verifyToken,
     controller.DeleteComment
