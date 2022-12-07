@@ -23,6 +23,7 @@ const verifyToken = (req,res,next) => {
     const { token } = res.locals    //<maybe this?? originally res.locals
     try { 
         let payload = jwt.verify(token,APP_SECRET)
+        console.log('verified', payload)
         if(payload) {
             res.locals.payload = payload
             return next()
@@ -40,8 +41,10 @@ const verifyToken = (req,res,next) => {
 const stripToken = (req,res,next) => {
     try {
         const token = req.headers['authorization'].split(' ')[1]
+        console.log(token)
         if (token) {
             res.locals.token = token
+            console.log('stripping', res.local.token)
             return next()
         }
     } catch (error) {

@@ -12,10 +12,13 @@ const Login = async (req,res) => {
             (await middleware.comparePassword(user.passwordDigest, req.body.password))
         ) {
             let payload = {
+                username: user.username,
                 id: user.id,
                 email: user.email
             }
+            console.log(payload)
             let token = middleware.createToken(payload)
+            console.log(token)
             return res.send({user: payload, token})
         }
         res.status(401).send({status: 'Error', msg: 'Unauthorized, Login'})
@@ -60,6 +63,7 @@ const UpdatePassword = async (req,res) => {
 
 const CheckSession = async ( req,res) => {
     const {payload} = res.locals
+    console.log("working", payload)
     res.send(payload)
 }
 
