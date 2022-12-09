@@ -3,7 +3,7 @@ const { Comments } = require('../models')
 const SeeComments = async (req,res) => {
     try { 
         const comments = await Comments.findAll({
-            where: { postId: req.body.postId}
+            where: { postId: req.params.postId}
         })
         res.send(comments)
     } catch (error) {
@@ -13,7 +13,9 @@ const SeeComments = async (req,res) => {
 
 const CreateComment = async (req, res) => {
     try {
-        const comment = await Comments.create({ ...req.body})
+        const userId = parseInt(req.params.userId)
+
+        const comment = await Comments.create({ ...req.body, userId})
         res.send(comment)
     } catch (error) {
         throw error
