@@ -1,6 +1,8 @@
-# Holly-gram-backend
+# Holly-gram
 
-Project Premise: Instagram-like Clone w/ Holiday/Winter Theme
+![demoPic](https://cdn.discordapp.com/attachments/874654004213317705/1050560868162744350/image.png)
+
+The aim of This project is to create a Holiday Themed version of Instagram, or various other socail media sites. This project uses react as a framework for the front-end, and sequelize and express for backend storage. Basic funtionality includes registration and login, full CRUD on posts in the form of a "feed", and full CRUD on comments for each post. Small levels of authorization is also implemented, with room for more to be added later. Current data rendered on screen was created with @ngneat/falso.
 
 # Team
 
@@ -11,23 +13,19 @@ Project Premise: Instagram-like Clone w/ Holiday/Winter Theme
  - Lindsey
     - Back-End & Back Git Person
 
-# Coding Plan
-- Front-End: 
-    - React
-    - Components
-    - Routes
-- CSS:
-    - Flex
-    - Styling
-- Back-End: 
-    - Sequelize
-        - Models
-        - Migrations
-        - Data
-    - Express
-        - Routes
-        - Controllers
-- Technologies: 
+# Requirements
+
+- Installs:
+    - nodemon
+    - cors
+    - morgan
+    - @ngneat/falso
+    - axios
+    - bcrypt
+    - jsonwebtoken
+    - dotenv
+
+- Technologies Used: 
     Git, Github, VSCode, Terminal, React, SQL, Sequelize, Express, Insomnia, Postico
 
 
@@ -36,21 +34,18 @@ Project Premise: Instagram-like Clone w/ Holiday/Winter Theme
 - Instagram-Like Layout
 - Nav Bar @ Top
     - Logo
-    - Search Bar
     - Icons
         - Home
         - Messages
         - Create Post
         - Explore
         - Activity
-        - Profile
 - Home Feed (Scrolling) of Posts with:
     - Author
     - Picture
     - Text
         - Comment
         - Like
-    - Tags
 
 # Wireframe
 
