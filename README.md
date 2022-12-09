@@ -2,7 +2,7 @@
 
 ![demoPic](https://cdn.discordapp.com/attachments/874654004213317705/1050560868162744350/image.png)
 
-The aim of This project is to create a Holiday Themed version of Instagram, or various other socail media sites. This project uses react as a framework for the front-end, and sequelize and express for backend storage. Basic funtionality includes registration and login, full CRUD on posts in the form of a "feed", and full CRUD on comments for each post. Small levels of authorization is also implemented, with room for more to be added later. Current data rendered on screen was created with @ngneat/falso.
+The aim of this project is to create a Holiday Themed version of Instagram and various other social media sites. This project uses React as a framework for the front-end, and Sequelize and Express for back-end storage. Basic funtionality includes registration and login, full CRUD on posts in the form of a "feed", and full CRUD on comments for each post. Small levels of authorization is also implemented, with room for more to be added later. Current data rendered on screen was created with @ngneat/falso.
 
 # Team
 
