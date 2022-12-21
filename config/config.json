@@ -15,9 +15,10 @@
   },
   "production": {
     "username": "postgres",
-    "password": " ",
-    "database": "holly_database_production",
+    "password": "PzVvJT1Bjio1Q1c6YPWi",
+    "database": "railway",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "port": "7138"
   }
 }
