@@ -6,7 +6,7 @@ module.exports = {
       {
         userName: "Santa Claus",
         fullName: "Tim Allen",
-        password: "naughtyornice",
+        passwordDigest: "naughtyornice",
         email: "saintnick@christmas.com",
         profilePic: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/10/The-Santa-Clauses-Trailer-Tim-Allen-Disney-Plus.jpg",
         createdAt: new Date(),
